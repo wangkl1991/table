@@ -1,0 +1,51 @@
+[
+    {
+        "SoliciationID": "panmcc-17-p-0000-062528",
+        "SoliciationTitle": "CA NetQOS License",
+        "NoticeType": "Combined Synopsis / Solicitation",
+        "DataPostedonFedBizOpps": "09/19/2017",
+        "SRTReviewResult": "Non-compliant(Action Required)",
+        "ActionStatus" : "Email Sent to POC",
+        "LatestActionData": "10/10/2017",
+        "Agency": "Department of Veterans Affairs",
+        "Office": "VA Northern California Health Care System"
+
+    },
+
+    {
+        "SoliciationID": "ohc-393-2017-0026-raw",
+        "SoliciationTitle": "\"CEB METRICS THAT MATTER\"",
+        "NoticeType": "Combined Synopsis / Solicitation",
+        "DataPostedonFedBizOpps": "09/23/2017",
+        "SRTReviewResult": "Compliant",
+        "ActionStatus" : "Email Sent to POC",
+        "LatestActionData": "9‎/‎26‎/‎2017",
+        "Agency": "Department of Health and Human Services",
+        "Office": "Centers for Medicare & Medicaid Services"
+    },
+
+    {
+        "SoliciationID": "17-233-sol-01057",
+        "SoliciationTitle": "ForeScout ActiveCare Advanced",
+        "NoticeType": "Combined Synopsis / Solicitation",
+        "DataPostedonFedBizOpps": "09/22/2017",
+        "SRTReviewResult": "Undetermined",
+        "ActionStatus" : "Pending Section 508 Coordinator Review",
+        "LatestActionData": "-",
+        "Agency": "Department of Health and Human Services",
+        "Office": "Program Support Center"
+    },
+
+    {
+        "SoliciationID": "pfa480117t1079",
+        "SoliciationTitle": "TC MAX License",
+        "NoticeType": "Cancellation",
+        "DataPostedonFedBizOpps": "09/22/2017",
+        "SRTReviewResult": "Non-compliant(Action Required)",
+        "ActionStatus" : "Pending Section 508 Coordinator Review",
+        "LatestActionData": "-",
+        "Agency": "Department of the Air Force",
+        "Office": "Air Combat Command"
+    }
+
+]

@@ -1,0 +1,65 @@
+<main id ="content" tabindex="-1">
+<div role="table">
+  
+    <input [(ngModel)]="str" type="text" id="myInput" aria-label="input filter"  placeholder="Search for Soliciation ID.."/>
+    <button (click)="inputFilter()">filter</button>
+
+
+   
+    <table id="myTable">
+        <caption>Solicitation Review Results for Section 508 Requirements</caption>
+       <thead>
+
+        <tr class="header">
+
+      
+          <th scope="col" style="width:10%;" (click)="sortHead()">Soliciation ID</th>
+          <th scope="col" style="width:10%;">Soliciation Title</th>
+          <th scope="col" style="width:10%;">
+              <label for = "Type">Notice Type</label>
+              <select [(ngModel)]="selected" (ngModelChange)="onSelectType(selected)" id="Type" name="Type">
+                  <option *ngFor="let option of options1" 
+                          [value]="option"> 
+                    {{ option }}
+                  </option>
+               </select>
+           </th>
+          <th scope="col" style="width:10%;">Data Posted on FedBizOpps</th>
+          <th scope="col" style="width:10%;">
+              <label for = "Result">SRT Review Result</label>
+              <select [(ngModel)]="selected1" (ngModelChange)="onSelectResult(selected1)" id="Result" name="Result">
+                  <option *ngFor="let option of options2" 
+                          [value]="option"> 
+                    {{ option }}
+                  </option>
+                </select>
+          </th>
+          <th scope="col" style="width:10%;">Action Status</th>
+          <th scope="col" style="width:10%;">Latest Action Date</th>
+          <th scope="col" style="width:10%;">Agency</th>
+          <th scope="col" style="width:10%;">Office</th>
+        </tr>
+       </thead>
+      
+        <tbody>
+        <tr *ngFor = "let section of table; let i ='index'" >
+        <!-- <tr *ngFor = "let section of table | filter:str: 'SoliciationID'; let i ='index'" > -->
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.SoliciationID}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.SoliciationTitle}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.NoticeType}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.DataPostedonFedBizOpps}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.SRTReviewResult}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.ActionStatus}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.LatestActionData}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.Agency}}</td>
+          <td [ngStyle]="{'background-color' : i % 2 == 0 ? 'white' : '#EDEDED'}" >{{section.Office}}</td>
+        </tr>
+        
+        </tbody>
+      </table>
+
+</div>
+
+
+
+</main>
